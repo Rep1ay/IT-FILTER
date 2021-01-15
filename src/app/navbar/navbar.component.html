@@ -1,5 +1,5 @@
 <div class="nav-block">
-  <li>Item</li>
-  <li>Item</li>
-  <li>Item</li>
+  <ul class="listOfItems">
+    <li *ngFor="let item of itemsCollection" class="listItem">{{item.title}}</li>
+  </ul>
 </div>
