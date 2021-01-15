@@ -5,11 +5,13 @@ import { AppComponent } from './app.component';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 import { NavbarComponent } from './navbar/navbar.component';
 import { MaterialModule } from './materials.module';
+import { SearchComponent } from './search/search.component';
+import { ContentComponent } from './content/content.component';
 
 @NgModule({
   declarations: [
     AppComponent, 
-    NavbarComponent
+    NavbarComponent, SearchComponent, ContentComponent
   ],
   imports: [
     BrowserModule,

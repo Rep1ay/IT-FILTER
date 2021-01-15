@@ -1,0 +1,11 @@
+.contentBlock {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 60px;
+
+    p.content {
+        display: flex;
+        margin: 30px;
+    }
+}

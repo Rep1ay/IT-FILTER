@@ -1,0 +1,9 @@
+.listOfItems {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+
+    .listItem {
+        list-style-type: none;
+    }
+}
