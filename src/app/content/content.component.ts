@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ContentComponent implements OnInit {
 
-  parCollection = [
+  serverCollection = [
     {
       title: 'First',
       description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui dicta minus molestiae vel beatae natus eveniet ratione temporibus aperiam harum alias officiis assumenda officia quibusdam deleniti eos cupiditate dolore doloribus!' 
@@ -20,11 +20,17 @@ export class ContentComponent implements OnInit {
       title: 'Third',
       description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui dicta minus molestiae vel beatae natus eveniet ratione temporibus aperiam harum alias officiis assumenda officia quibusdam deleniti eos cupiditate dolore doloribus!' 
     }
-  ]
+  ];
+
+  filteredCollection = [];
 
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  searchArticle(word){
+    this.filteredCollection = this.serverCollection.filter(article => article.title === word);
   }
 
 }
