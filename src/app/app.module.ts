@@ -11,7 +11,9 @@ import { ContentComponent } from './content/content.component';
 @NgModule({
   declarations: [
     AppComponent, 
-    NavbarComponent, SearchComponent, ContentComponent
+    NavbarComponent,
+    SearchComponent,
+    ContentComponent
   ],
   imports: [
     BrowserModule,
