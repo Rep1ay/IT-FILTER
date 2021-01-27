@@ -1,6 +1,12 @@
+<div class="searchBlock">
+    <input #searchInput type="text" placeholder="Start type...">
+
+    <button (click)="searchArticle(searchInput.value)">Find</button>
+</div>
+
 <div class="contentBlock">
-    <div *ngFor="let paragraf of parCollection" class="content">
-        <h3> {{paragraf.title}}</h3>
-       <p>{{paragraf.description}}</p>
+    <div *ngFor="let article of filteredCollection" class="content">
+        <h3> {{article.title}}</h3>
+       <p>{{article.description}}</p>
     </div>
 </div>
